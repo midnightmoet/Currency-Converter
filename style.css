@@ -1,3 +1,9 @@
+:root {
+    --primary-dark: darkcyan;
+    --secondary-bg: yellow;
+    --primary-text-light: aliceblue;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,26 +12,48 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background: yellow;
+    background: var(--secondary-bg);
 }
 
 .container {
-    width: 500px;
-    height: 500px;
-    background: teal;
-    color: white;
+    background: var(--primary-dark);
+    color:  var(--primary-text-light);
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    max-width: 450px;
+    text-align: center;
 }
-
+.heading {
+    text-align: center;
+    font-size: 30px;
+}
 .currency-container {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
+}
+
+.currency-container select {
+    padding: 10px;
+}
+
+/* FOCUS MEANS WHEN YOUR CLICKING */
+select:focus,
+input:focus {
+    outline: none;
+}
+
+.currency-container input {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    text-align: right;
+    padding: 20px;
+    width: 100%;
+    color: var(--primary-text-light);
+}
+
+.exchange-rate {
+    font-size: 16px;
+    font-weight: 600;
 }
