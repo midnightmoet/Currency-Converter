@@ -1,6 +1,6 @@
 ### Currency Converter
 
-This is a simple currency converter that uses the [Exchange Rates API](https://exchangeratesapi.io/) to convert between currencies.
+This is a simple currency converter that uses the [Exchange Rates API](https://app.exchangerate-api.com/dashboard) to convert between currencies.
 
 ## Technologies Used
 - HTML5
